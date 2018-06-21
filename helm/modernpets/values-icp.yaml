@@ -8,6 +8,13 @@ image:
   repository: mycluster.icp:8500/jpetstore
   pullPolicy: Always
 
+web:
+  image:
+    tag: latest
+db:
+  image:
+    tag: latest
+
 ingress:
   enabled: true
   hosts:

@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: {{ .Chart.Name }}-mmssearch
-        image: {{ .Values.image.repository }}/mmssearch
+        image: "{{ .Values.image.repository }}/mmssearch:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: 8080

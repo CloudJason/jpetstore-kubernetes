@@ -6,6 +6,7 @@ replicaCount: 1
 
 image:
   repository: registry.ng.bluemix.net/modernpets # Ex: registry.ng.bluemix.net/mynamespace
+  tag: latest
   pullPolicy: Always
 
 ingress:

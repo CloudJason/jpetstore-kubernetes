@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: {{ .Chart.Name }}-jpetstoreweb
-        image: {{ .Values.image.repository }}/jpetstoreweb
+        image: "{{ .Values.image.repository }}/jpetstorewebimage:{{ .Values.web.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
           - name: VERSION
@@ -85,7 +85,7 @@ spec:
     spec:
       containers:
       - name: {{ .Chart.Name }}-jpetstoredb
-        image: {{ .Values.image.repository }}/jpetstoredb
+        image: "{{ .Values.image.repository }}/jpetstoredb:{{ .Values.db.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: 3306

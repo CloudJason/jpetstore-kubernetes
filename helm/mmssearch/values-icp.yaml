@@ -6,6 +6,7 @@ replicaCount: 1
 
 image:
   repository:  mycluster.icp:8500/jpetstore
+  tag: latest
   pullPolicy: Always
 
 ingress:

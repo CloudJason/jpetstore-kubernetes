@@ -8,6 +8,13 @@ image:
   repository: registry.ng.bluemix.net/modernpets # Ex: registry.ng.bluemix.net/mynamespace
   pullPolicy: Always
 
+web:
+  image:
+    tag: latest
+db:
+  image:
+    tag: latest
+
 ingress:
   enabled: true
   hosts:
