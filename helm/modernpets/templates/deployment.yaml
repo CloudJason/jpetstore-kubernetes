@@ -29,14 +29,19 @@ spec:
           - name: VERSION
             value: "1"
         ports:
-        - containerPort: 9080
+          - containerPort: 9080
         readinessProbe:
           httpGet:
             path: /
             port: 9080
           initialDelaySeconds: 10
           periodSeconds: 5
-
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "750m"
+          limits:
+            cpu: "1500m"
 ---
 kind: Deployment
 apiVersion: extensions/v1beta1
