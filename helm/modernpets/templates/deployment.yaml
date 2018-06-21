@@ -58,7 +58,7 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: 60
+      targetAverageUtilization: 25
 ---
 kind: Deployment
 apiVersion: extensions/v1beta1
