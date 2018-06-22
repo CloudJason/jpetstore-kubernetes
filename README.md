@@ -268,4 +268,4 @@ ibmcloud cs cluster-rm yourclustername
 
 ## Related Content
 
-IBM Cloud solution tutorial: [Migrate web applications from Virtual Machines to Kubernetes](https://console.bluemix.net/docs/tutorials/vm-to-containers-and-kubernetes.html) 
+IBM Cloud solution tutorial: [Migrate web applications from Virtual Machines to Kubernetes](https://console.bluemix.net/docs/tutorials/vm-to-containers-and-kubernetes.html)
